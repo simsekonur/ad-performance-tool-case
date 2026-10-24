@@ -17,6 +17,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.12",
     "@types/node": "^26.6.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -1,0 +1,44 @@
+Release android 3.42.0
+Released: 2026-09-15 15:21 UTC
+
+commit a901386
+Author: elif.y
+Date:   2026-09-15 10:00 UTC
+
+    feat(templates): add 6 new dance trend templates
+
+    Six templates based on this month's TikTok dance trends.
+    Each template ships with a 3-second preview loop.
+
+commit fb10e79
+Author: deniz.k
+Date:   2026-09-14 20:13 UTC
+
+    chore(deps): bump RevenueCat SDK
+
+commit 4c0f5e9
+Author: arda.t
+Date:   2026-09-13 22:43 UTC
+
+    feat(paywall): show yearly plan savings as a percentage
+
+    Yearly plan card now shows 'Save 58%' instead of the per-week price.
+    Copy comes from remote config so it can be changed per country.
+
+commit 954608d
+Author: deniz.k
+Date:   2026-09-13 11:17 UTC
+
+    fix(render): videos stuck at 99% on low-memory Android phones
+
+    The final mux step ran out of memory on devices with under 4 GB RAM.
+    We now stream frames to disk instead of holding them in memory.
+
+commit 21da498
+Author: baran.s
+Date:   2026-09-13 11:09 UTC
+
+    fix(trial): trial reminder notification sent a day late
+
+    Reminder was scheduled in UTC instead of the user's time zone.
+    Users west of UTC got it after the trial had already converted.

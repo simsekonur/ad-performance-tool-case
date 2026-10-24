@@ -1,0 +1,26 @@
+Release android 3.45.0
+Released: 2026-10-06 10:18 UTC
+
+commit ebfe55c
+Author: elif.y
+Date:   2026-10-05 19:05 UTC
+
+    feat(templates): add 6 new dance trend templates
+
+    Six templates based on this month's TikTok dance trends.
+    Each template ships with a 3-second preview loop.
+
+commit 87fa85e
+Author: elif.y
+Date:   2026-10-04 17:43 UTC
+
+    refactor(render): split render queue into its own module
+
+commit 32b736a
+Author: zeynep.o
+Date:   2026-10-04 04:43 UTC
+
+    feat(onboarding): add sample video on the first screen
+
+    First onboarding screen now autoplays a 5-second sample video.
+    Falls back to a still image on slow connections.

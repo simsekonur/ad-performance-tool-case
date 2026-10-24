@@ -1,0 +1,27 @@
+Release ios 3.41.0
+Released: 2026-09-05 15:37 UTC
+
+commit 20465d6
+Author: elif.y
+Date:   2026-09-05 09:34 UTC
+
+    refactor(paywall): move plan copy to remote config
+
+    No user-facing change. Plan titles and badges now come from remote config.
+
+commit 8ca5dbb
+Author: baran.s
+Date:   2026-09-04 06:07 UTC
+
+    fix(audio): background music out of sync after trimming
+
+    Audio offset was not updated when the clip start changed.
+
+commit 61c0ac0
+Author: arda.t
+Date:   2026-09-03 08:37 UTC
+
+    fix(trial): trial reminder notification sent a day late
+
+    Reminder was scheduled in UTC instead of the user's time zone.
+    Users west of UTC got it after the trial had already converted.

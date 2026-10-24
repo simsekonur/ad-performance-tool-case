@@ -1,0 +1,43 @@
+Release android 3.44.0
+Released: 2026-09-29 16:14 UTC
+
+commit 85cf917
+Author: zeynep.o
+Date:   2026-09-29 03:05 UTC
+
+    chore(deps): bump RevenueCat SDK
+
+commit 206b210
+Author: baran.s
+Date:   2026-09-28 05:33 UTC
+
+    refactor(paywall): move plan copy to remote config
+
+    No user-facing change. Plan titles and badges now come from remote config.
+
+commit 7e63bc7
+Author: baran.s
+Date:   2026-09-27 19:09 UTC
+
+    feat(paywall): show yearly plan savings as a percentage
+
+    Yearly plan card now shows 'Save 58%' instead of the per-week price.
+    Copy comes from remote config so it can be changed per country.
+
+commit 18e9654
+Author: elif.y
+Date:   2026-09-27 14:47 UTC
+
+    feat(onboarding): add sample video on the first screen
+
+    First onboarding screen now autoplays a 5-second sample video.
+    Falls back to a still image on slow connections.
+
+commit 45e1ea3
+Author: elif.y
+Date:   2026-09-27 05:53 UTC
+
+    perf(render): cut average render time by about 20%
+
+    Batches frame uploads and reuses the model session between clips.
+    Median render time 41s -> 33s in internal tests.

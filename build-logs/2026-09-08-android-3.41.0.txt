@@ -1,0 +1,37 @@
+Release android 3.41.0
+Released: 2026-09-08 09:13 UTC
+
+commit 06f0c64
+Author: elif.y
+Date:   2026-09-08 04:23 UTC
+
+    refactor(render): split render queue into its own module
+
+commit aafad4a
+Author: baran.s
+Date:   2026-09-07 15:07 UTC
+
+    chore(deps): bump Firebase SDK
+
+commit aa14ea5
+Author: deniz.k
+Date:   2026-09-07 13:56 UTC
+
+    refactor(paywall): move plan copy to remote config
+
+    No user-facing change. Plan titles and badges now come from remote config.
+
+commit c2469fb
+Author: arda.t
+Date:   2026-09-07 10:25 UTC
+
+    test(paywall): cover restore purchases flow
+
+commit 04b0df4
+Author: arda.t
+Date:   2026-09-05 12:09 UTC
+
+    fix(render): videos stuck at 99% on low-memory Android phones
+
+    The final mux step ran out of memory on devices with under 4 GB RAM.
+    We now stream frames to disk instead of holding them in memory.

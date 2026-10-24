@@ -1,0 +1,54 @@
+Release ios 3.42.0
+Released: 2026-09-11 10:29 UTC
+
+commit ffb32d6
+Author: elif.y
+Date:   2026-09-11 04:34 UTC
+
+    fix(render): videos stuck at 99% on low-memory Android phones
+
+    The final mux step ran out of memory on devices with under 4 GB RAM.
+    We now stream frames to disk instead of holding them in memory.
+
+commit 820a505
+Author: deniz.k
+Date:   2026-09-10 17:20 UTC
+
+    feat(onboarding): add sample video on the first screen
+
+    First onboarding screen now autoplays a 5-second sample video.
+    Falls back to a still image on slow connections.
+
+commit 009d6e6
+Author: deniz.k
+Date:   2026-09-10 15:44 UTC
+
+    feat(paywall): show yearly plan savings as a percentage
+
+    Yearly plan card now shows 'Save 58%' instead of the per-week price.
+    Copy comes from remote config so it can be changed per country.
+
+commit 442ae7e
+Author: deniz.k
+Date:   2026-09-10 11:22 UTC
+
+    feat(editor): let users trim clips before rendering
+
+    Adds start/end handles to the clip editor.
+    Trimmed clips render faster because fewer frames are sent to the model.
+
+commit 6226e6b
+Author: zeynep.o
+Date:   2026-09-09 22:19 UTC
+
+    fix(onboarding): skip button hidden on small screens
+
+    Skip button was clipped on screens shorter than 640pt.
+
+commit c78d48b
+Author: elif.y
+Date:   2026-09-09 08:12 UTC
+
+    feat(share): export videos directly to TikTok
+
+    Adds a 'Share to TikTok' button on the result screen using the TikTok share kit.

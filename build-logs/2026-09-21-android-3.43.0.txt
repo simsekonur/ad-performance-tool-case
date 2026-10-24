@@ -1,0 +1,35 @@
+Release android 3.43.0
+Released: 2026-09-21 11:34 UTC
+
+commit 5bb6975
+Author: baran.s
+Date:   2026-09-21 05:24 UTC
+
+    fix(render): videos stuck at 99% on low-memory Android phones
+
+    The final mux step ran out of memory on devices with under 4 GB RAM.
+    We now stream frames to disk instead of holding them in memory.
+
+commit fe6a373
+Author: arda.t
+Date:   2026-09-19 20:07 UTC
+
+    chore(ci): cache build dependencies
+
+commit e1a10d0
+Author: arda.t
+Date:   2026-09-19 00:20 UTC
+
+    perf(render): cut average render time by about 20%
+
+    Batches frame uploads and reuses the model session between clips.
+    Median render time 41s -> 33s in internal tests.
+
+commit 11a96df
+Author: deniz.k
+Date:   2026-09-18 18:23 UTC
+
+    feat(paywall): show yearly plan savings as a percentage
+
+    Yearly plan card now shows 'Save 58%' instead of the per-week price.
+    Copy comes from remote config so it can be changed per country.

@@ -1,0 +1,26 @@
+Release ios 3.43.0
+Released: 2026-09-18 16:05 UTC
+
+commit a5a60a8
+Author: zeynep.o
+Date:   2026-09-18 10:55 UTC
+
+    fix(audio): background music out of sync after trimming
+
+    Audio offset was not updated when the clip start changed.
+
+commit 5ae9839
+Author: baran.s
+Date:   2026-09-17 23:14 UTC
+
+    chore(analytics): rename paywall_view event properties
+
+    Renames plan_id -> plan and source -> entry_point for consistency with the web paywall.
+
+commit 8061ace
+Author: arda.t
+Date:   2026-09-16 05:14 UTC
+
+    feat(i18n): add Portuguese (Brazil) translations for new templates
+
+    Translates template names and descriptions added in the last two releases.

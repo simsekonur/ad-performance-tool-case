@@ -1,0 +1,47 @@
+Release ios 3.46.0
+Released: 2026-10-09 13:52 UTC
+
+commit 385b5c5
+Author: baran.s
+Date:   2026-10-09 02:43 UTC
+
+    fix(paywall): restore purchases failing on some iOS 18 devices
+
+    Restore was calling the old receipt endpoint on iOS 18.
+    Now uses StoreKit 2 transaction history. Affects roughly 3% of restore attempts.
+
+commit b81489c
+Author: arda.t
+Date:   2026-10-08 12:05 UTC
+
+    perf(startup): lazy-load the template catalog
+
+    Catalog now loads after the home screen is visible. Cold start -300 ms.
+
+commit ed8446f
+Author: zeynep.o
+Date:   2026-10-08 02:03 UTC
+
+    perf(upload): compress source photos before upload
+
+    Photos are resized to 1536 px on the long edge before upload.
+
+commit 37ae023
+Author: zeynep.o
+Date:   2026-10-07 22:23 UTC
+
+    fix(crash): crash when opening the gallery without photo permission
+
+    Gallery screen assumed permission was granted. Now shows the permission prompt first.
+
+commit 71464c4
+Author: zeynep.o
+Date:   2026-10-07 20:43 UTC
+
+    chore(ci): cache build dependencies
+
+commit 007e535
+Author: deniz.k
+Date:   2026-10-07 00:12 UTC
+
+    chore(deps): bump Firebase SDK

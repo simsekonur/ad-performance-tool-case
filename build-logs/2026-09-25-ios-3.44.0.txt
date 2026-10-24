@@ -1,0 +1,23 @@
+Release ios 3.44.0
+Released: 2026-09-25 09:51 UTC
+
+commit 9da2b19
+Author: elif.y
+Date:   2026-09-24 07:49 UTC
+
+    chore(deps): bump Firebase SDK
+
+commit cbef02c
+Author: elif.y
+Date:   2026-09-23 23:04 UTC
+
+    test(paywall): cover restore purchases flow
+
+commit 70d48e2
+Author: zeynep.o
+Date:   2026-09-23 12:35 UTC
+
+    fix(render): videos stuck at 99% on low-memory Android phones
+
+    The final mux step ran out of memory on devices with under 4 GB RAM.
+    We now stream frames to disk instead of holding them in memory.

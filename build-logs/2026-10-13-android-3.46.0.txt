@@ -1,0 +1,28 @@
+Release android 3.46.0
+Released: 2026-10-13 09:55 UTC
+
+commit 490eedf
+Author: baran.s
+Date:   2026-10-11 19:54 UTC
+
+    refactor(paywall): move plan copy to remote config
+
+    No user-facing change. Plan titles and badges now come from remote config.
+
+commit 1823a69
+Author: elif.y
+Date:   2026-10-11 06:48 UTC
+
+    perf(render): cut average render time by about 20%
+
+    Batches frame uploads and reuses the model session between clips.
+    Median render time 41s -> 33s in internal tests.
+
+commit a1de301
+Author: zeynep.o
+Date:   2026-10-10 18:57 UTC
+
+    feat(onboarding): add sample video on the first screen
+
+    First onboarding screen now autoplays a 5-second sample video.
+    Falls back to a still image on slow connections.

@@ -1,0 +1,35 @@
+Release ios 3.45.0
+Released: 2026-10-02 13:05 UTC
+
+commit 7131af7
+Author: elif.y
+Date:   2026-10-01 13:57 UTC
+
+    test(paywall): cover restore purchases flow
+
+commit b64cbf7
+Author: arda.t
+Date:   2026-10-01 06:47 UTC
+
+    docs: update release checklist
+
+commit ddfe9fb
+Author: deniz.k
+Date:   2026-10-01 06:02 UTC
+
+    feat(editor): let users trim clips before rendering
+
+    Adds start/end handles to the clip editor.
+    Trimmed clips render faster because fewer frames are sent to the model.
+
+commit 6e2a3da
+Author: arda.t
+Date:   2026-09-29 21:52 UTC
+
+    chore(ci): cache build dependencies
+
+commit ec01f1b
+Author: zeynep.o
+Date:   2026-09-29 20:33 UTC
+
+    chore(deps): bump RevenueCat SDK
